@@ -11,6 +11,7 @@
 
 body {
   margin: 20px auto;
+  width: 720px;
   font-family: OSPDIN, Palatino, "Lucida Grande", sans-serif;
   font-size: 36px;
   color: rgb(9, 24, 50);
