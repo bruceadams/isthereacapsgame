@@ -14,12 +14,17 @@
     <footer>
       <nav>
         <ul>
-        <% if about? %>
+        <% if current_page_is?('/') %>
+          <li>Home</li>
+        <% else %>
+          <li><a href="/">Home</a></li>
+        <% end %>
+        <% if current_page_is?('/about') %>
           <li>About</li>
         <% else %>
           <li><a href="/about">About</a></li>
         <% end %>
-        <% if faq? %>
+        <% if current_page_is?('/faq') %>
           <li>FAQ</li>
         <% else %>
           <li><a href="/faq">FAQ</a></li>

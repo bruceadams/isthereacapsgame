@@ -45,14 +45,8 @@ class Caps < Sinatra::Base
       return (today.upcase == wanted.upcase) ? "next" : ""
     end
 
-    def about?
-      return true if request.env['PATH_INFO'] == '/about'
-      return false
-    end
-
-    def faq?
-      return true if request.env['PATH_INFO'] == '/faq'
-      return false
+    def current_page_is?(this_page)
+      return request.env['PATH_INFO'] == this_page
     end
 
     def ovis_birthday?
