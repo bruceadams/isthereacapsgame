@@ -105,3 +105,31 @@ a:link, a:visited {
 a:hover, a:active {
   border-bottom: 2px solid;
 }
+
+@media (max-width: 480px) {
+  body {
+    width: 300px;
+    padding: 0 10px;
+    font-size: 27px;
+  }
+
+  .response {
+    font-size: 125px;
+  }
+
+  #content {
+    font-size: 18px;
+  }
+
+  #content h1 {
+    font-size: 22px;
+  }
+
+  #content h2 {
+    font-size: 19px;
+  }
+
+  footer nav {
+    font-size: 15px;
+  }
+}
